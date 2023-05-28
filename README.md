@@ -29,7 +29,7 @@ sudo chmod 774 setup_pipeline.sh
 ```
 ln -s path/to/pretrained/models/root_dir/ models
 ```
-6. test installation
+5. test installation
 ```
 python test_setup.py
 ```
