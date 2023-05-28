@@ -26,7 +26,10 @@ sudo chmod 774 setup_pipeline.sh
 ./setup_pipeline.sh
 ```
 4. change "MODELS_FOLDER" in sd.cfg to your local models folder (or create symlink named 'models' that links to your local models folder)
-5. test installation
+```
+ln -s path/to/pretrained/models/root_dir/ models
+```
+6. test installation
 ```
 python test_setup.py
 ```
