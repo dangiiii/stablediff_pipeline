@@ -8,7 +8,6 @@ This works accordingly for all other models on huggingface but may prompt a requ
 
 1. create a conda environment
 ```
-conda create --prefix ./env-name packages=version
 # to install conda env in 'env' subfolder of anaconda directory
 conda create -n stablediff python=3.10 jupyter
 # to install conda env in subfolder of current dir
