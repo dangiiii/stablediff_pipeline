@@ -7,10 +7,20 @@ git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 This works accordingly for all other models on huggingface but may prompt a request for your username and password if you want to download a model where you have to share your details on the model card.
 
 1. create a conda environment
-2. switch to conda env
-3. run "setup_pipeline.ipynb" notebook to install diffusers package and training scripts
-4. change "MODELS_FOLDER" in sd.cfg to your local models folder (or create symlink named 'models' that links to your local models folder)
-5. test installation
+```
+conda create --prefix ./env-name packages=version
+# to install conda env in 'env' subfolder of anaconda directory
+conda create -n stablediff python=3.10 jupyter
+# to install conda env in subfolder of current dir
+conda create --prefix ./stablediff python=3.10 jupyter
+```
+3. activate conda env
+4. run "setup_pipeline.ipynb" notebook to install diffusers package and training scripts
+```
+jupyter-notebook setup_pipeline.ipynb
+```
+6. change "MODELS_FOLDER" in sd.cfg to your local models folder (or create symlink named 'models' that links to your local models folder)
+7. test installation
 ```
 python test_setup.py
 ```
