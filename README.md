@@ -6,6 +6,7 @@ git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 ```
 This works accordingly for all other models on huggingface but may prompt a request for your username and password if you want to download a model where you have to share your details on the model card.
 
+# Setup
 1. create a conda environment
 ```
 # to install conda env in 'env' subfolder of anaconda directory
